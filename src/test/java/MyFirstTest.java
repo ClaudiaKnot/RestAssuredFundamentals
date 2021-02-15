@@ -8,11 +8,14 @@ public class MyFirstTest extends VideoGameConfig {
 
     @Test
     public void myFirstTest() {
+        // given
         given()
-                .log().all().
-        when().get("videogames").
-        then().
-                log().all();
+                .log().all()
+        // when (method+endpoint)
+        .when().get("videogames")
+        // then
+        .then()
+                .log().all();
     }
 
     @Test
